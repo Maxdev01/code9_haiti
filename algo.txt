@@ -1,0 +1,29 @@
+Algorit sikwi modpas 
+{teste validation yon modpas}
+
+varyab modpas : chenn 
+
+varyab vre_modpas <- "p@ssw0rd" : chenn
+
+varyab ansyen_modpas <- "ayiti1804" : chenn 
+
+
+
+demare:
+
+afiche(" antre modpas ou an:")
+
+antre (modpas)
+
+tanke modpas != vre_modpas fe:
+	si modpas = ansyen_modpas donk :
+		afiche ("sa se ansyen modpas lan ou antre la")
+
+	sinon :
+	  antre (modpas)
+
+
+afiche ("modpas ou mete an korek")
+
+
+fen

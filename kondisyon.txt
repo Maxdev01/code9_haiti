@@ -1,0 +1,86 @@
+
+
+        ############## KONDISYON KONPLEKS 
+
+algorit: ki ane 
+{algorit sa la poul jwenn nan ki ane mwen ye}
+
+varyab ane: antye <- 2020 
+
+varyab opsyon: chenn 
+
+demare 
+
+	si ane = 2020 donk 
+	  opsyon <- 'nou nan ane sa'
+
+	sinon si ane < 2020 donk 
+	  opsyon <- 'ane pase'
+
+	 sinon 
+	  	opsyon <- 'ane kap vini'
+
+	  fsi
+fen 
+
+
+
+
+algorit: nivo kob mwen ye 
+ 
+{algorit sa pemet mwen konnen eskeu mwen gen anpil kob}
+
+varyab lajan: reyel 
+
+demare 
+   antre(lajan)
+
+   	si lajan > 10000.0 donk 
+   	 afiche('ou pa gen anpil kob non')
+
+
+   	sinon si lajan >= 1000 donk 
+   	  afiche ('ou pa lwen raze non')
+
+   	sinon 
+
+   	  afiche ('degajew gen kob tande')
+
+   	fsi
+
+
+fen	
+
+
+
+
+
+
+
+
+#### lhrw gen plusye kondisyon 
+// sa se yon moyen kap pemet ou fe yon kondisyen kap pi fasil
+
+ 
+ algorit: ki chans ou
+
+ {algorit sa ap pemet ou konnen nivo chans ou}
+
+ varyab let_nomw: chenn 
+
+
+ demare
+  afiche ("antre premye let nan nomw ")
+
+  antre(let_nomw)
+
+  selon let_nomw 
+  	'a': afiche('ou atiran')
+  	'b': afiche('ou renmn bestie')
+  	'c': afiche('ou renmen mete chemiz')
+
+  finalman 
+  	afiche('nou poko jwenn moun ou ye an')
+
+fen
+ 
