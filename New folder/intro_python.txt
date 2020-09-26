@@ -1,0 +1,185 @@
+Si ou pa konnen ki sa yon Algorit ye, men yon kout 
+definisyon senp ki sòti nan Wikipedia: Yon algorit
+ se yon sekans fini san anbigwite nan operasyon yo 
+ oswa enstriksyon yo, sa yo itilize pou rezoud yon 
+ gwoup pwoblèm. Mwen pral eksplike w li nan kèk fraz
+  ki pi senp: Yon algorit se deskripsyon egzat, nan 
+  yon konsèp senp, de ki jan yon moun ka rezoud yon pwoblèm.
+
+
+
+
+  %%%%%%%%%%%%%%%%%%    varyab   %%%%%%%%%%%%\
+
+  Varyab yo gen yon non, yon tip ak sa ki anndan l la ki rele valè. Vrè definisyon yon varyab nan pwogramasyon se: Yon plas ki ka estoke ki makonnen ak yon non senbolik ki gen ladan yon pakèt enfòmasyon ke w ka konnen oubyen w pa konnen, yo rele yo valè pou yo kapab itilize yo nan yon pwogram.
+
+
+
+  Fòk ou konnen ke varyab yo dwe respekte kèk kritè pou w ba yo non, sa vle di ke varyab yo pa ka:
+
+  kòmanse avèk chif: Nou pa ka gen varyab ki kòmanse ak chif nan non yo: Ekzanp: 12varyabmwen, 34peyi
+gen espas ladan: Varya yo pa ka gen espas, ou riske jwenn erè sentaks Ekzanp: varyab mwen
+gen menm non avèk mo ki rezève nan Python: Mo kle ki rezève yo se de mo ke Python itilize deja pou pwòp fonksyonalite li. Tankou print, input ke nou pral wè nan chapit kap vini yo.
+gen karaktè espesyal: Varyab yo pa ka gen karaktè sa yo ladan !@#$%^&*()){}”:L<>?/ sèlman underscore _
+
+
+
+&&&&&&&&&&&&&&&& type varyanb yo &&&&&&&&&&&&&&&
+
+
+Pou w ka wè tip yon varyab, ou itilize fonksyon Python ki rele type(). Nou pral pale de fonksyon nan pati de(2) a, pou kounya jis itilize fonksyon type() epi mete varyab ou vle konn tip li a, anndan parantèz la jan w wè m fè la: type(varyab_mwen). Pou w afiche valè yon varyab nan konsòl Python an, itilize fonskyon print(). Si w ta fè print(type("Ayibobo")), sa ap afiche pou ou, tip tèks "Ayibobo" ki se yon chenn karaktè (w ap konn sa k rele chenn karaktè pi ba nan chapit sa).
+
+
+Tip varyab "Integer" - abreje l se int:
+
+
+>>> a = 1
+>>> b = 3
+>>> type(a)
+<class "int">
+
+
+
+//////////////
+
+>>> a = '12'
+>>> int(a)
+12
+
+////////
+
+>>> a = 3.4
+>>> b = 9.0
+>>> type(a)
+<class 'float'>
+>>> tes = a + 9 # mwen ajoute 9 ki se yon antye
+>>> type(tes)
+<class "float">
+
+
+
+/////////////////
+
+
+Fonksyon ki vin ak li ki pou konvèti yon valè oubyen yon varyab an desimal se float()
+
+>>> nonb = 12
+>>> nonb = float(nonb)
+>>> print(nonb)
+12.0
+
+
+//////////////////////
+
+Tip varyab "String" - abreje l se str
+Tout karaktè ki anndan giymè senp 'mwen se karaktè' oubyen giymè doub "mwen se karaktè" se chenn karaktè. Konnen ke la mwen pa di lèt, sa vle di l ka nenpòt karakè: Lèt, chif, karaktè espesyal. Menm si w remake chif oubyen lòt karaktè anndan giymè senp oubyen doub, se chenn karaktè yo ye.
+
+
+>>> var = "12345" # sa pa antye paske li nan mitan giymè
+>>> var2 = "Mwen la pou m vin ekspè nan Python"
+>>> type(var)
+<class "str">
+>>> type(var2)
+<class "str">
+
+
+Fonksyon ki vin ak li pou w konvèti valè oubyen varyab an chenn karaktè se str().
+
+>>> a = 12
+>>> str(a)
+'12'
+>>> str(34.5)
+'34.5'
+
+
+//
+
+Tip varyab NoneType
+Mo kle None itilize pou defini lè yon valè pa vo anyen oubyen l se yon valè ki san efè. None pa menm valè ak 0, False ounyen yon chenn vid "". None se jis yon tip valè ki pwòp ak tèt li ki soti anndan klas NoneType, sa vle di sèl None ka None
+
+>>> a = None
+>>> type(a)
+<class 'NoneType'>
+
+
+>>> diksyone_mwen = { 'kle_m': 'vale_m','kle_m_2': 'vale_m_2' }
+>>> type(diksyone_mwen)
+<class 'dict'>
+
+
+>>> tipl_mwen = (1,2)
+>>> tipl_mwen_2 = (1,2,3,4)
+>>> type(tipl_mwen_2)
+<class 'tuple'>
+>>> yon_varyab = (1)
+# se se yon antye paske li gen yon sel eleman, li pa konsidere parantèz la
+>>> type(yon_varyab)
+<class 'int'>
+
+
+Operatè konparezon
+Operatè lojik yo enpòtan anpil nan pwogramasyon, se ekspresyon ki toujou evalye avèk True oubyen False. Yo itilize pou teste kondisyon, ke nou pral wè nan chapit aprè a. Se toujou menm konsèp nou konn itilize nan aljèb lineyè a.
+
+< : kareman enferyè
+
+> : kareman siperyè
+
+== : Ekivalan Yon sèl siy egal (=) itilize pou enstansye yon varyab jan nou fè l avan depi nan kòmansman kou sa. Pou teste egalite oubyen ekivalans 2 valè, ou dwe itilize double siy egal (=)
+
+<= : Enferyè oubyen egal
+
+>= : Siperyè oubyen egal
+
+!= : Diferan, pa ekivalan. siy sa se kontrè ekivalans (==)
+
+Se reprezantasyon yo sa. An n gade kòman tès valide yo ye nan shell la
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Nou gen 2 operatè lojik ki se and ak or. Nou ka ajoute yon twazyèm ki se not ki bay opoze validite yon kondisyon oubyen yon varyab.
+
+a or b OU lojik. Si validite a egal True, ben validite tout kondisyon an egal True san l pa menm al teste validite b. Si non, nan ka sa validite tout kondisyon depann de validite b.
+
+a and b : E lojik. Si validite a egal False, ben validite tout kondisyon an egal False san l pa menm al teste validite b. Si non, nan ka sa validite tout kondisyon depann de validite b.
+
+not a: NON lojik. Li bay opoze validite a
+
+Pran tout tan w pou w pratike tout enteraksyon ak varyab yo nan chapit sa, pou n ka byen konprann yo
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Operatè konparezon
+Operatè lojik yo enpòtan anpil nan pwogramasyon, se ekspresyon ki toujou evalye avèk True oubyen False. Yo itilize pou teste kondisyon, ke nou pral wè nan chapit aprè a. Se toujou menm konsèp nou konn itilize nan aljèb lineyè a.
+
+< : kareman enferyè
+
+> : kareman siperyè
+
+== : Ekivalan Yon sèl siy egal (=) itilize pou enstansye yon varyab jan nou fè l avan depi nan kòmansman kou sa. Pou teste egalite oubyen ekivalans 2 valè, ou dwe itilize double siy egal (=)
+
+<= : Enferyè oubyen egal
+
+>= : Siperyè oubyen egal
+
+!= : Diferan, pa ekivalan. siy sa se kontrè ekivalans (==)
+
+Se reprezantasyon yo sa. An n gade kòman tès valide yo ye nan shell la
+
+>>> x = 3
+>>> y = 5
+>>> print(5 == 5)
+True
+>>> x != y               # x pa ekivalan ak y
+True
+>>> x > y                # x pi gran ke y
+False
+>>> x < y                # x pi piti ke y
+True
+>>> x >= y               # x pi gran oubyen egal ak y
+False
+>>> x <= y               # x pi piti oubyen egal ak y
+True

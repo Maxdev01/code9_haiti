@@ -48,9 +48,6 @@ demare
 
     	afiche("mwayen ou se: ", mwayen)
 
-
-
-
  redim non_tablo(longe_tablo)
 // Si w ta vle itilize l nan yon algorit, ou ka jis mande pou antre 
 //  longè tablo a, aprè ou redimansyone li.
